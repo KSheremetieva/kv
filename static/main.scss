@@ -1,0 +1,263 @@
+// @import $ from '../../../../node_modules/jquery';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../node_modules/animate-scss/animate.scss';
+// @import $ from 'jquery';
+// @import './fonts/danielbd.ttf';
+@import './adapt.scss';
+
+
+@font-face{
+	font-family: myriad;
+	src: url('./fonts/Myriad.ttf');
+}
+
+
+*{
+	font-family: myriad;
+	
+}
+
+
+//PASS
+
+.center{
+	position: relative;
+    top: 15%;
+	// width: 90%;
+	// height: 40%;
+	// position: absolute;
+	// top: 30%;
+	// left: 5%;
+	// position: absolute;
+	// top: 25%;
+	//left:25%;
+
+	// border: 1px solid;
+}
+
+.h1{
+	text-align: center;
+	// position: relative;
+	// top: 10%;
+	// left: 15%;
+	color: tomato;
+	// font-size: 50px;
+	animation: 1s bounceInDown;
+}
+
+.input{ 
+	// position: relative;
+	// top: 10%;
+	// left: 0%;
+	// height: 70px;
+	// font-size: 40px;
+	// line-height: 50px;
+	color: #8B6969;
+	font-weight: bold;
+	letter-spacing: 1px;
+	animation: 1s rotateInUpLeft;
+}
+
+.passB{
+	// height: 50px;
+	// font-size: 45px;
+	// line-height: 47px;
+	color: tomato;
+	outline: none;
+	// position: absolute;
+	// bottom: 40%;
+	// left: 70%;
+	animation: 1s slideOutDown;
+
+}
+
+
+//TASK
+
+.taskBlock{
+    position: relative;
+    top: 15%;
+  }
+
+.task{
+	// height: 50%;
+	// font-size: 50px;
+	// line-height: 55px;
+	animation: 1s fadeInLeft;
+}
+
+.taskB{
+	// height: 50px;
+	// font-size: 45px;
+	outline: none;
+	// line-height: 50px;
+	// position: absolute;
+	animation: 1s fadeInRigth;
+}
+
+//ERROR
+.error{
+	// height: 15%;
+	// font-size: 35px;
+	// line-height: 45px;
+}
+
+// .stage{
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 1px solid orange;
+// 	position: relative;
+// 	perspective: 5000px;
+// 	transform-style: preserve-3d;
+// }
+
+// .layer{
+// 	width: 100%;
+// 	height: 100%;
+// 	position: absolute;
+// 	transform-style: preserve-3d;
+// 	animation-name: rotate;
+// 	animation-duration: 5s;
+// 	animation-timing-function: ease-in-out;
+// 	animation-iteration-count: infinite;
+// 	animation-direction: alternate;
+// 	animation-fill-mode: forwards;
+// 	transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+// }
+
+// .layer:after{
+// 	font: 70px/0.7 myriad;
+// 	content: 'Ваш\A Пароль';
+// 	white-space: pre;
+// 	text-align: center;
+// 	height: 100%;
+// 	width:100%;
+// 	position: absolute;
+// 	top: 50px;
+// 	color: darken(#FF6347,4%);
+// 	text-shadow: 4px 0 10px rgba(250, 250, 250, 1);
+// }
+
+// $i: 1;
+// $layers: 20;
+// @for $i 1 trought $layers {
+// 	.layer:nth-child(#{$i}):after{
+// 		transform: translateZ(($i - 1)* -2px);
+// 	}
+// }
+
+// .layer:nth-child(n+#{round($layers/2)}):after{
+// 	-webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
+// }
+
+// .layer:nth-child(n+#{round($layers/2 + 1)}):after{
+// 	-webkit-text-stroke: 15px dodgerblue;
+// 	text-shadow: 6px 0 6px darken(dodgerblue,35%),
+// 		5px 5px 5px darken(dodgerblue,40%),
+// 		0 6px 6px darken(dodgerblue,35%);
+// }
+
+// .layer:nth-child(n+#{round($layers/2 + 2)}):after {
+// 	-webkit-text-stroke: 15px darken(dodgerblue, 10%);
+// }
+
+// .layer:last-child:after {
+// 	-webkit-text-stroke: 17px rgba(0, 0, 0, 0.1);
+// }
+
+// .layer:first-child:after{
+// 	color: #fff;
+// 	text-shadow: none;
+// }
+
+// @keyframes rotate {
+// 	100%{
+// 		transform: rotateY(-40deg) rotateX(-40deg);
+// 	}
+// }
+
+// html{
+// 	--main-color: gold;
+// }
+
+// .stage{
+// 	background-color: var(--main-color);
+// }
+
+
+
+// body{
+//   perspective: 250px;
+//   perspective-origin: center -50px;
+//   }
+
+// .side,
+// .container{
+//   width:250px;
+// }
+// .side{
+// 	opacity: 0.5;
+// 	position: absolute;
+// 	width: 250px;
+// 	height: 250px;
+// 	border: 1px solid #F9CDB9;
+// }
+// .container{
+// 	margin: 0 auto;
+// 	position: relative;
+//   	width:250px;
+//    	height:250px;
+// 	// border: 1px solid;
+// 	transform-style: preserve-3d;
+// 	animation: rotate 10s infinite linear;
+// }
+//  .front{
+//     border: 1px solid #F9CDB9;
+//     width:250px;
+//     font-size:70px;
+//   text-shadow: -2px 0px 2px rgba(150, 150, 150, 1), -2px 0px 2px rgba(181, 181, 181, 1);
+//   // transform: translateZ(-125px);
+//   }
+// .container:before,
+//   .container:after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 250px;
+//     height: 250px;
+//     border: 2px dotted #999999;
+//     }
+//     .container:before {
+//       transform: rotateX(90deg);  
+//       }
+//     .container:after {
+//       transform: rotateY(90deg);  
+//       }
+// .left{
+//  background-color: #ECC8EC;
+//  transform: translateX(-125px) rotateY(90deg);
+// }
+
+// .right{
+// 	background-color: #FDFC90;
+// 	transform: translateX(125px) rotateY(90deg);
+// }
+// .top{
+// 	background-color: #4DE9C2;
+// 	transform: translateY(-125px) rotateX(90deg);
+// }
+
+// .bottom{
+// 	background-color: #E1D5BD;
+// 	transform: translateY(125px) rotateX(90deg);
+// }
+// .front{
+// 	// transform: translateZ(125px);
+// 	transform-style: preserve-3d;
+// }
+
+//   @keyframes rotate {
+//   100% {
+//     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+//   }
+// }

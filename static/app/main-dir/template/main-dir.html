@@ -1,0 +1,36 @@
+<div ng-if="error" class="alert alert-danger error">
+  <p><b>Неверный Пароль!</b> Повторите попытку.</p>
+</div>
+
+ 
+
+<div ng-if="flag" class="col-xs-10 col-xs-push-1 center">
+	<div class="container">
+ 		<div class="back side"></div>
+	    <div class="left side"></div>
+	    <div class="right side"></div>
+	    <div class="top side"></div>
+	    <div class="bottom side"></div>
+	    <div class="front side">
+
+			<div class="h1Inside col-xs-10 col-xs-push-1">Ваш</div>
+			<div class="h1Inside col-xs-10 col-xs-push-1">Пароль</div>
+
+		
+ 			<div class="col-xs-10 col-xs-push-1">
+				<input ng-model="password" type="text" class="form-control inputInside" aria-label="Text input with checkbox" style="border: 2px solid grey">
+			</div>
+	    </div>
+ 	</div>
+	<div class="col-xs-10 col-xs-push-1">
+		<button ng-click="check(password)" type="button" class="btn btn-default passB passBInside">Далее</button>
+	</div>
+</div>
+
+<div ng-if="task" class="col-xs-10 col-xs-push-1 taskBlock">
+	<div class="alert alert-info task">
+	  <p><strong>ВАШЕ ЗАДАНИЕ : </strong> <br>{{!!request?request:''}}</p>
+	</div>
+
+	<button ng-click="back()" type="button" class="btn btn-info taskB col-sm-4 col-sm-offset-4">Далее</button>
+</div>
